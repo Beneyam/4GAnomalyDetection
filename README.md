@@ -98,9 +98,9 @@ Or, if using Jupyter/VSCode, run the notebook cells.
 - **Visualization:**  
   Example PCA plots for each model (located in the same folder):
 
-  ![LOF](pca_lof.png)
-  ![IF](pca_if.png)
-  ![SVM](pca_svm.png) 
+  ![LOF](pca_LOF.png)
+  ![IF](pca_IF.png)
+  ![SVM](pca_SVM.png) 
 
   *(PCA plots show separation of normal and anomalous points with clear axis labels and legends.  
   **PCA Component 1** and **PCA Component 2** are new variables created by combining the original features to capture the most variance in the data, making it easier to visualize clusters and anomalies.)*
