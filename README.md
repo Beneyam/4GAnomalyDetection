@@ -7,7 +7,7 @@ This project provides a **modular and reproducible pipeline** for unsupervised a
 ## Features
 
 - **Data Cleaning & Encoding:**  
-  Cleans raw Excel data, extracts and encodes eNodeB IDs, and saves a ready-to-use CSV.
+  Cleans raw but anomalized Excel data, extracts and encodes eNodeB IDs, and saves a ready-to-use CSV.
 - **Unsupervised Anomaly Detection:**  
   Supports Local Outlier Factor (LOF), Isolation Forest, and One-Class SVM.
 - **Operator Rule-Based Evaluation:**  
