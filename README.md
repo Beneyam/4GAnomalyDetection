@@ -97,7 +97,7 @@ Or, if using Jupyter/VSCode, run the notebook cells.
   ```
 
 - **Visualization:**  
-  ![PCA Example](docs/pca_example.png)  
+  pca_loc.png  
   *(PCA plots show separation of normal and anomalous points with clear axis labels and legends.)*
 
 ---
