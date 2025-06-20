@@ -15,7 +15,6 @@ This project provides a **modular and reproducible pipeline** for unsupervised a
   - RRC_Success_Rate < 97.0%  
   - ERAB_Success_Rate < 98.0%  
   to define "true" anomalies for evaluation.
-  For performance evaluation, the threshold values can be changed.
 - **Metrics & Visualization:**  
   Computes precision, recall, F1-score, and provides clear PCA-based visualizations with labeled axes and legends.
 - **Modular Code:**  
@@ -97,8 +96,14 @@ Or, if using Jupyter/VSCode, run the notebook cells.
   ```
 
 - **Visualization:**  
-  pca_loc.png  
-  *(PCA plots show separation of normal and anomalous points with clear axis labels and legends.)*
+  Example PCA plots for each model (located in the same folder):
+
+  | LOF | Isolation Forest | One-Class SVM |
+  |-----|-----------------|---------------|
+  | ![LOF](pca_lof.png) | ![IF](pca_if.png) | ![SVM](pca_svm.png) |
+
+  *(PCA plots show separation of normal and anomalous points with clear axis labels and legends.  
+  **PCA Component 1** and **PCA Component 2** are new variables created by combining the original features to capture the most variance in the data, making it easier to visualize clusters and anomalies.)*
 
 ---
 
@@ -127,8 +132,9 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 ├── encoded_enodeb_rrc_success.csv
 ├── Aug01-31.xlsx
 ├── README.md
-└── docs/
-    └── pca_example.png
+├── pca_lof.png
+├── pca_if.png
+├── pca_svm.png
 ```
 
 ---
@@ -149,4 +155,4 @@ MIT License
 
 ## Contact
 
-For questions or suggestions, please open an issue or contact the maintainer, beneyam.berehanu@aau.edu.et
+For questions or suggestions, please open an
