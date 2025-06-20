@@ -7,14 +7,18 @@ This project provides a **modular and reproducible pipeline** for unsupervised a
 ## Features
 
 - **Data Cleaning & Encoding:**  
-  Cleans raw Excel data, extracts and encodes eNodeB IDs, and saves a ready-to-use CSV.
+  Cleans raw but anomalized Excel data, extracts and encodes eNodeB IDs, and saves a ready-to-use CSV.
 - **Unsupervised Anomaly Detection:**  
   Supports Local Outlier Factor (LOF), Isolation Forest, and One-Class SVM.
 - **Operator Rule-Based Evaluation:**  
   Uses thresholds:  
   - RRC_Success_Rate < 97.0%  
   - ERAB_Success_Rate < 98.0%  
+<<<<<<< HEAD
   to define "true" anomalies for evaluation.
+=======
+  to define "true" anomalies for evaluation. The values can be changed for further model evaluation
+>>>>>>> 15aed00738cc1ee67ecaa275211f55eea7d294bc
 - **Metrics & Visualization:**  
   Computes precision, recall, F1-score, and provides clear PCA-based visualizations with labeled axes and legends.
 - **Modular Code:**  
@@ -98,9 +102,15 @@ Or, if using Jupyter/VSCode, run the notebook cells.
 - **Visualization:**  
   Example PCA plots for each model (located in the same folder):
 
+<<<<<<< HEAD
   | LOF | Isolation Forest | One-Class SVM |
   |-----|-----------------|---------------|
   | ![LOF](pca_lof.png) | ![IF](pca_if.png) | ![SVM](pca_svm.png) |
+=======
+  ![LOF](pca_LOF.png)
+  ![IF](pca_IF.png)
+  ![SVM](pca_SVM.png) 
+>>>>>>> 15aed00738cc1ee67ecaa275211f55eea7d294bc
 
   *(PCA plots show separation of normal and anomalous points with clear axis labels and legends.  
   **PCA Component 1** and **PCA Component 2** are new variables created by combining the original features to capture the most variance in the data, making it easier to visualize clusters and anomalies.)*
@@ -155,4 +165,8 @@ MIT License
 
 ## Contact
 
+<<<<<<< HEAD
 For questions or suggestions, please open an
+=======
+For questions or suggestions, please open an issue or contact beneyam.berehanu@aau.edu.et
+>>>>>>> 15aed00738cc1ee67ecaa275211f55eea7d294bc
