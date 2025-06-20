@@ -14,7 +14,7 @@ This project provides a **modular and reproducible pipeline** for unsupervised a
   Uses thresholds:  
   - RRC_Success_Rate < 97.0%  
   - ERAB_Success_Rate < 98.0%  
-  to define "true" anomalies for evaluation.
+  to define "true" anomalies for evaluation. The values can be changed for further model evaluation
 - **Metrics & Visualization:**  
   Computes precision, recall, F1-score, and provides clear PCA-based visualizations with labeled axes and legends.
 - **Modular Code:**  
