@@ -18,8 +18,8 @@ In real-world telecom networks, it's difficult to label anomalies in advance bec
   Uses thresholds:  
   - RRC_Success_Rate < 95.0%  
   - ERAB_Success_Rate < 96.0%  
-  - UL_TP < 50,000  
-  - DL_TP < 200,000  
+  - UL_TP < 100,000  
+  - DL_TP < 750,000  
   to define "true" anomalies for evaluation. These can be adjusted to fit your network.
 - **Metrics & Visualization:**  
   Computes precision, recall, F1-score, and provides clear PCA-based visualizations with labeled axes and legends.
@@ -104,9 +104,9 @@ Or, if using Jupyter/VSCode, run the notebook cells.
 - **Visualization:**  
   Example PCA plots for each model (located in the same folder):
 
-  ![LOF](pca_lof.png)
-  ![IF](pca_if.png)
-  ![SVM](pca_svm.png)
+  ![LOF](pca_LOF.png)
+  ![IF](pca_IF.png)
+  ![SVM](pca_SVM.png)
 
   *(PCA plots show separation of normal and anomalous points with clear axis labels and legends.  
   **PCA Component 1** and **PCA Component 2** are new variables created by combining the original features to capture the most variance in the data, making it easier to visualize clusters and anomalies.)*
